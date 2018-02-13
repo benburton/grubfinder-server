@@ -1,0 +1,13 @@
+{
+  "plugins": ["jasmine"],
+  "extends": "airbnb",
+  "rules": {
+    "indent": ["error", 2],
+    "space-before-function-paren": ["error", "never"],
+    "comma-dangle": ["error", "never"],
+    "no-trailing-spaces": "off"
+  },
+  "env" : {
+    "jasmine": true
+  }
+}

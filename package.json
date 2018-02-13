@@ -1,0 +1,40 @@
+{
+  "name": "orch-serv",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "postinstall": "./node_modules/.bin/babel  ./src --experimental --source-maps-inline -d ./dist",
+    "start": "npm run postinstall && node dist/index.js",
+    "test": "npm run postinstall && node dist/spec.js",
+    "inspection-import": "npm run postinstall && node dist/scripts/inspection-import/index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "async-lock": "^1.1.0",
+    "await-stream-ready": "^1.0.1",
+    "cors": "^2.8.4",
+    "csv-parse": "^2.0.0",
+    "express": "^4.16.2",
+    "mongodb": "^3.0.2",
+    "mongoose": "^5.0.4",
+    "request": "^2.83.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-es2015": "^6.24.1",
+    "eslint": "^4.17.0",
+    "eslint-config-airbnb": "^16.1.0",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-jasmine": "^2.9.2",
+    "eslint-plugin-jsx-a11y": "^6.0.3",
+    "eslint-plugin-react": "^7.6.1",
+    "jasmine": "^3.0.0",
+    "jasmine-console-reporter": "^2.0.1",
+    "jasmine-core": "^2.99.1",
+    "jasmine-node": "^1.14.5",
+    "jasmine-promise-wrapper": "0.0.3"
+  }
+}
