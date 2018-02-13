@@ -2,7 +2,8 @@
 [![Logo](logo.png)](logo.png)
 
 This is a server for the GrubFinder application, whose purpose is to aggregate all grading and reporting for New York
-City restaurants and to display them in a digestible (heh) way.
+City restaurants and to display them in a digestible (heh) way. You can find the corresponding `grubfinder-client` code
+[over here](https://github.com/benburton/grubfinder-client).
 
 ## Development
 
